@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Desafio</title>
+		<style>
+		<script type= css/text>
+		* { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+		
+		
+		#pagina { 
+			width: 1100px; 
+			margin: 20px auto 0 auto ;
+			
+		}
+		
+		#map { 
+		  width: 770px; 
+		  height: 500px; 
+		  float: left 
+		 }
+		#trajeto  {
+			width: 320px; 
+			height: 500px; 
+			float: right; 
+			overflow: scroll 
+		}
+		
+		</script>
+		
+		</style>
+    </head>
+ 
+    <body>
+    	<div id="pagina">
+        
+        	<h1>Desafio : Criando Rotas API Google Maps</h1>
+        
+            <form method="post" action="index.html">
+                <fieldset>
+                    <legend>Criar rotas</legend>
+                    
+                    <div>
+                        <label for="origem">Endereço de Origem:</label>
+                        <input type="text" id="origem" name="origem" />
+                    </div>
+                    
+                    <div>
+                        <label for="destino">Endereço de Destino:</label>
+                        <input type="text" id="destino" name="destino" />
+                    </div>
+                    
+                    <div>
+                        <input type="submit" id="btnEnviar" name="btnEnviar" value="Enviar" />
+                    </div>
+                </fieldset>
+            </form>
+        
+            <div id="map"></div>
+            
+            <div id="trajeto"></div>
+        
+        </div>
+        
+        <script src="jquery.min.js"></script>
+		
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+		<script src="mapa.js"></script>
+    </body>
+</html>
